@@ -40,7 +40,6 @@ public class ReverseString {
         StringBuilder sb = new StringBuilder();
         for (int i = charArray.length - 1; i >= 0; i--) {
             sb.append(charArray[i]);
-           
         }
 
         System.out.println("Reversed output (Without using reverse method) :" + sb);
