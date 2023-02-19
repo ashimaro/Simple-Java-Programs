@@ -20,8 +20,8 @@ public class ReverseString {
         usingReverseMethod();
         withoutReverseMethod();
     }
+    
 //method 1: using reverse method
-
     public static void usingReverseMethod() {
         StringBuffer sb = new StringBuffer(string);
 
