@@ -9,29 +9,30 @@ import java.util.Scanner;
 public class VowelChecker {
 
     public static void main(String[] args) {
-        String a;
-        Scanner input = new Scanner(System.in);
+        String a; //declare  a string
+        Scanner input = new Scanner(System.in); // instantian of new Scanner object
         System.out.println("VOWEL CHECKER");
 
         System.out.println("\nEnter your word :");
-        a = input.nextLine();
+        a = input.nextLine(); //assigns user'input to a
 
         System.out.println("\nRESULT");
 
-        //call method
-        boolean hasVowel = vowelChecker(a); //boolean is used to express true or false
+        //call method to tell user there is vowel(s) in input
+        //boolean is used to express true or false
+        boolean hasVowel = vowelChecker(a); // invokes the vowelChecker method with the input String "a" and stores the result in a boolean variable (hasVowel)
 
-        if (hasVowel) {
-            System.out.println("Vowel found!");
+        if (hasVowel) {// if hasVowel is true
+            System.out.println("Vowel found!"); //print it on the console.
 
-        } else {
+        } else {//if hasVowel is false
             System.out.println("Vowel is not found");
 
         }
 //call method
         String vowel = printVowels(a);
 
-        if (vowel.length() > 0) {
+        if (vowel.length() > 0) {// length of vowel string is set greater than 0, so that it will print the vowel(s) in input
             System.out.println("Vowels in " + a + " : " + vowel);
 
         } else {
