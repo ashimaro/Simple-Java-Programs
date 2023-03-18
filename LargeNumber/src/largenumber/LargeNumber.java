@@ -15,12 +15,13 @@ public class LargeNumber {
         int x = sc.nextInt();
         int y = sc.nextInt();
         int z = sc.nextInt();
-
+//call method
         findLargeNumber(x, y, z);
     }
 
+//build method
     public static void findLargeNumber(int x, int y, int z) {
-
+//compare using if-else
         if (x > y && x > z) {
             System.out.println("First number is the largest");
         } else if(y > x && y > z){
