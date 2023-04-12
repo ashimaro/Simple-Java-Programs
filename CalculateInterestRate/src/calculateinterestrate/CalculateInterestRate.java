@@ -30,7 +30,7 @@ public class CalculateInterestRate {
 
         double r = 0.01; // initial guess for interest rate
 
-        
+        // for the loop  Newton-Raphson method is used.
         for (int i = 0; i < 1000; i++) {
             double f = c - P * r / (1 - Math.pow(1 + r, -N));
             double fp = -P / (1 - Math.pow(1 + r, -N)) + P * r * N * Math.pow(1 + r, -N - 1) / Math.pow(1 - Math.pow(1 + r, -N), 2);
