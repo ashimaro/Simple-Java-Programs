@@ -14,7 +14,7 @@ public class AgeCalculator {
     public static void main(String[] args) {
         
         Scanner input = new Scanner(System.in);
-        System.out.println("Enter your birthday (YYYY-MM-DD)");
+        System.out.println("Enter your birthday in format of (YYYY-MM-DD)");
         String birthInput =input.nextLine();
         LocalDate start_Local_date = LocalDate.parse(birthInput);
         LocalDate end_Local_date = LocalDate.now();
@@ -28,3 +28,9 @@ public class AgeCalculator {
                 + period_Between.getDays() + "d");
     }
 }
+
+/**
+ *In Java, ChronoUnit and Period are classes in the java.time package that provide functionality for working with dates and times.
+ *ChronoUnit is an enum
+ *Period represents a period of time 
+ */
