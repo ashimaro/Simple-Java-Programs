@@ -1,21 +1,14 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package andcondition;
 
 import java.util.Scanner;
 
 /**
  *
- * @author User
+ * @author ashi
  */
 public class AndCondition {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
     		 Scanner in = new Scanner(System.in);
 		 System.out.print("Input first number: ");
@@ -25,3 +18,5 @@ public class AndCondition {
 		 System.out.println(n1 > 0 && n1 < 1 && n2 > 0 && n2 < 1);
 	}
 }
+//this program demosntrates on use of logical AND operator. 
+//It will print true or false based on the logical expression (n1 > 0 && n1 < 1 && n2 > 0 && n2 < 1)
